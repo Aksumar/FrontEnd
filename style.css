@@ -1,41 +1,141 @@
-p {
-    margin-bottom: 12;
-}
-h1, h2, h3{
-    font-weight: 400;
+* {
+    box-sizing: border-box;
 }
 
-h1{
-    font-size: 36;
-    margin-bottom: none;
+.mr {
+    padding-right: 20px;
 }
 
-h2{
-    font-size: 32;
-    border: 1;
-    border-color: gray;
-    margin-bottom: 8;
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-h2{
-    font-size: 32;
-    border: 1;
-    border-color: gray;
-    margin-bottom: 8;
+.header {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    height: 80px;
+    padding-left: 35px;
+    padding-right: 35px;
+    align-items: center;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.08);
 }
 
-.header-title {
-    font-size: 18;
-    border: none;
-    margin-bottom: 10;
+.header-right {
+    display: flex;
+    flex-direction: row;
 }
 
-#header {
-    margin-bottom: 32px;
-    text-align: center;
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    /* background-color: pink; */
 }
 
-#footer{
-    margin-top: 64;
-    text-align: center;
+.banner {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #CFF1E9;
+    border-radius: 32px;
+    width: 1030px;
+    height: 300px;
+    padding: 40px 50px;
+    background-image: url(./images/Saly-1.svg);
+    background-position: right -5% bottom 45%;
+    background-repeat: no-repeat;
+}
+
+.banner-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* background-color: aqua; */
+}
+
+.text-style-simple {
+    font-family: 'ALS Hauss';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+    color: #2B2D33;
+}
+
+.text-style-bold {
+    font-family: 'Navigo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 56px;
+    color: #2B2D33;
+    margin-top: 24px;
+}
+
+.btn {
+    padding: 11px 24px;
+    width: 197px;
+    height: 48px;
+    background: #2B2D33;
+    border-radius: 8px;
+    color: #FFFFFF;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    /* background-color: blueviolet; */
+    width: 1030px;
+    margin-top: 50px;
+}
+
+.content-header {
+    /* Heading / H1 32 Navigo */
+    font-family: 'Navigo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+    /* identical to box height, or 125% */
+    display: flex;
+    align-items: center;
+    /* Brand / Primary */
+    color: #2B2D33;
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 32px 0px;
+}
+
+.content-tag-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.tag {
+    padding: 5px 16px;
+    position: static;
+    height: 32px;
+    /* Brand / Primary */
+    background: #F4F4F4;
+    border-radius: 16px;
+    margin: 0px 8px;
+}
+
+.selected-tag {
+    background: #2B2D33;
+    color: #FFFFFF;
+}
+
+
+/* todo */
+
+.grid {
+    width: 1030px;
+    height: 600px;
 }
