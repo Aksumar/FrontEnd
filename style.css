@@ -2,8 +2,16 @@
     box-sizing: border-box;
 }
 
-.mr {
-    padding-right: 20px;
+@font-face {
+    font-family: "Navigo";
+    src: url('fonts/Raif_font_Navigo-web_regular.ttf');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: ALS Hauss;
+    src: url('fonts/ALS_Hauss_Medium_2.1.otf');
+    font-style: normal;
 }
 
 body {
@@ -28,33 +36,46 @@ body {
     flex-direction: row;
 }
 
+.img-header {
+    width: 24px;
+    height: 24px;
+}
+
+img {
+    display: block;
+}
+
+.photo {
+    border-radius: 50%;
+}
+
+.mr-header {
+    margin: 0 24px 0 0;
+}
+
 .main {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 50px;
     /* background-color: pink; */
+    padding-left: 205px;
+    padding-right: 205px;
 }
 
 .banner {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column;
+    flex-basis: 0;
     background-color: #CFF1E9;
     border-radius: 32px;
-    width: 1030px;
+    width: 100%;
     height: 300px;
     padding: 40px 50px;
     background-image: url(./images/Saly-1.svg);
     background-position: right -5% bottom 45%;
     background-repeat: no-repeat;
-}
-
-.banner-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    /* background-color: aqua; */
+    min-width: 416px;
 }
 
 .text-style-simple {
@@ -66,6 +87,10 @@ body {
     color: #2B2D33;
 }
 
+.mr-banner {
+    margin: 12px 0 0 0;
+}
+
 .text-style-bold {
     font-family: 'Navigo';
     font-style: normal;
@@ -73,11 +98,12 @@ body {
     font-size: 40px;
     line-height: 56px;
     color: #2B2D33;
-    margin-top: 24px;
+    margin: 24px 0 0 0;
 }
 
 .btn {
     padding: 11px 24px;
+    margin: 32px 0 0 0;
     width: 197px;
     height: 48px;
     background: #2B2D33;
@@ -89,23 +115,19 @@ body {
     display: flex;
     flex-direction: column;
     /* background-color: blueviolet; */
-    width: 1030px;
+    width: 100%;
     margin-top: 50px;
 }
 
 .content-header {
-    /* Heading / H1 32 Navigo */
     font-family: 'Navigo';
     font-style: normal;
     font-weight: 700;
     font-size: 32px;
     line-height: 40px;
-    /* identical to box height, or 125% */
     display: flex;
     align-items: center;
-    /* Brand / Primary */
     color: #2B2D33;
-    /* Inside auto layout */
     flex: none;
     order: 0;
     flex-grow: 0;
@@ -121,10 +143,15 @@ body {
     padding: 5px 16px;
     position: static;
     height: 32px;
-    /* Brand / Primary */
     background: #F4F4F4;
     border-radius: 16px;
-    margin: 0px 8px;
+    font-family: 'ALS Hauss';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+    color: #2B2D33;
+    margin: 0px 10px;
 }
 
 .selected-tag {
@@ -132,10 +159,54 @@ body {
     color: #FFFFFF;
 }
 
+.content-table {
+    border-collapse: collapse;
+    margin: 24px 0 0 0;
+    min-width: 420px;
+}
 
-/* todo */
+.table-date {
+    font-family: 'ALS Hauss';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    color: #2B2D33;
+    margin: 0px 10px;
+}
 
-.grid {
-    width: 1030px;
-    height: 600px;
+.event {
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+}
+
+.table-text-bold {
+    font-family: 'ALS Hauss';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+    color: #2B2D33;
+    margin: 4px 0px;
+}
+
+.table-text-simple {
+    font-family: 'ALS Hauss';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    color: #AAABAD;
+    margin: 4px 0px;
+}
+
+.event-name {
+    font-family: 'ALS Hauss';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+    color: #00A5BC;
+    margin: 4px 0px;
 }
