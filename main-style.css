@@ -39,6 +39,7 @@ body {
 .img-header {
     width: 24px;
     height: 24px;
+    margin-right: 10px;
 }
 
 img {
@@ -58,9 +59,6 @@ img {
     flex-direction: column;
     align-items: center;
     margin-top: 50px;
-    /* background-color: pink; */
-    padding-left: 205px;
-    padding-right: 205px;
 }
 
 .banner {
@@ -114,7 +112,6 @@ img {
 .content {
     display: flex;
     flex-direction: column;
-    /* background-color: blueviolet; */
     width: 100%;
     margin-top: 50px;
 }
@@ -162,7 +159,6 @@ img {
 .content-table {
     border-collapse: collapse;
     margin: 24px 0 0 0;
-    min-width: 420px;
 }
 
 .table-date {
@@ -173,6 +169,7 @@ img {
     line-height: 22px;
     color: #2B2D33;
     margin: 0px 10px;
+    width: 109px;
 }
 
 .event {
@@ -205,8 +202,74 @@ img {
     font-family: 'ALS Hauss';
     font-style: normal;
     font-weight: 500;
+    width: 177px;
     font-size: 14px;
     line-height: 22px;
     color: #00A5BC;
     margin: 4px 0px;
+}
+
+.table-btn {
+    border: 2px solid #D6D6D7;
+    width: 200px;
+    height: 35px;
+    background: #FFFFFF;
+    border-radius: 8px;
+    color: #2B2D33;
+    font-family: 'ALS Hauss';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+}
+
+.disabled {
+    border: 2px solid #E9EAEA;
+    color: #E9EAEA;
+}
+
+.like-container {
+    width: 84px;
+    display: flex;
+    flex-direction: row;
+}
+
+.heart {
+    margin-right: 5px;
+}
+
+@media (max-width: 1440px) {
+    .main {
+        padding-left: 205px;
+        padding-right: 205px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .main {
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+    .event {
+        max-width: 356px;
+    }
+}
+
+@media (max-width: 800px) {
+    .event {
+        max-width: 334px;
+    }
+    .event-name {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .event {
+        max-width: 334px;
+    }
+    .banner {
+        background-image: none;
+    }
 }
